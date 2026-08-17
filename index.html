@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Óptica Aplicada | IA e Tecnologias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= CABEÇALHO ================= -->
+    <header class="hero" id="inicio">
+        <div class="hero-content">
+            <span class="tag">PROJETO INTEGRADOR</span>
+            <h1>🔬 Óptica Aplicada</h1>
+            <p>Descubra como a luz e seus fenômenos estão presentes em diferentes tecnologias do nosso cotidiano.</p>
+            <a href="#contextos" class="botao-principal">🚀 Explorar a óptica</a>
+        </div>
+    </header>
+
+    <!-- ================= ACESSIBILIDADE ================= -->
+    <section class="acessibilidade" aria-label="Recursos de acessibilidade">
+        <strong>♿ Recursos assistivos:</strong>
+        <button onclick="aumentarFonte()" aria-label="Aumentar tamanho do texto">A+</button>
+        <button onclick="diminuirFonte()" aria-label="Diminuir tamanho do texto">A−</button>
+        <button onclick="tamanhoNormal()" aria-label="Voltar ao tamanho normal">A</button>
+        <button onclick="altoContraste()" aria-label="Ativar alto contraste">◐ Contraste</button>
+        <button onclick="modoEscuro()" aria-label="Ativar modo escuro">🌙 Modo escuro</button>
+        <button onclick="pararLeitura()" aria-label="Parar leitura">⏹ Parar</button>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <nav aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#optica">O que é óptica?</a>
+        <a href="#contextos">Contextos</a>
+        <a href="#fenomenos">Fenômenos</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#fontes">Fontes</a>
+    </nav>
+
+    <main>
+        <!-- ================= INTRODUÇÃO ================= -->
+        <section class="secao" id="optica">
+            <div class="titulo-secao">
+                <span>💡</span>
+                <div>
+                    <h2>O que é óptica?</h2>
+                    <p>Entendendo a ciência da luz</p>
+                </div>
+            </div>
+            <div class="conteudo">
+                <p>A óptica é a área da Física que estuda a luz, seu comportamento e sua interação com diferentes materiais. Ela está presente em objetos e tecnologias que usamos todos os dias.</p>
+                <p>Espelhos, óculos, câmeras, projetores, microscópios, lasers e sensores são alguns exemplos de aplicações dos conhecimentos da óptica.</p>
+            </div>
+            <button class="botao-ouvir" onclick="lerSecao(this)">🔊 Ouvir esta seção</button>
+        </section>
+
+        <!-- ================= CONTEXTOS ================= -->
+        <section id="contextos">
+            <div class="titulo-central">
+                <span>🌎</span>
+                <h2>Óptica em diferentes contextos</h2>
+                <p>Veja como a óptica está presente em ambientes residenciais, comerciais, escolares e industriais.</p>
+            </div>
+
+            <!-- RESIDENCIAL -->
+            <article class="contexto residencial">
+                <div class="icone-contexto">🏠</div>
+                <div>
+                    <h2>Residencial</h2>
+                    <p class="descricao">A óptica aparece em diversos objetos presentes nas nossas casas.</p>
+                    <div class="aplicacoes">
+                        <div class="aplicacao">
+                            <div class="emoji">🪞</div>
+                            <h3>Espelhos</h3>
+                            <p>Utilizam a <strong>reflexão da luz</strong>. Quando a luz atinge a superfície do espelho, ela é refletida e permite a formação de uma imagem.</p>
+                        </div>
+                        <div class="aplicacao">
+                            <div class="emoji">👓</div>
+                            <h3>Óculos</h3>
+                            <p>Utilizam lentes que provocam <strong>refração da luz</strong>, ajudando na formação adequada das imagens para a visão.</p>
+                        </div>
+                        <div class="aplicacao">
+                            <div class="emoji">📱</div>
+                            <h3>Câmera do celular</h3>
+                            <p>Possui lentes que direcionam a luz para formar uma imagem no sensor da câmera.</p>
+                        </div>
+                    </div>
+                    <button class="botao-ouvir" onclick="lerSecao(this)">🔊 Ouvir residencial</button>
+                </div>
+            </article>
+
+            <!-- COMERCIAL -->
+            <article class="contexto comercial">
+                <div class="icone-contexto">🏪</div>
+                <div>
+                    <h2>Comercial</h2>
+                    <p class="descricao">Lojas e estabelecimentos também utilizam diferentes tecnologias ópticas.</p>
+                    <div class="aplicacoes">
+                        <div class="aplicacao">
+                            <div class="emoji">🛍️</div>
+                            <h3>Vitrines</h3>
+                            <p>Utilizam iluminação e materiais transparentes para facilitar a visualização dos produtos.</p>
+                        </div>
+                        <div class="aplicacao">
+                            <div class="emoji">📹</div>
+                            <h3>Câmeras</h3>
+                            <p>As lentes das câmeras captam a luz refletida pelos objetos e permitem registrar imagens para segurança.</p>
+                        </div>
+                        <div class="aplicacao">
+                            <div class="emoji">💡</div>
+                            <h3>Iluminação</h3>
+                            <p>A distribuição da luz pode destacar produtos e melhorar a visibilidade dentro dos estabelecimentos.</p>
+                        </div>
+                    </div>
+                    <button class="botao-ouvir" onclick="lerSecao(this)">🔊 Ouvir comercial</button>
+                </div>
+            </article>
+
+            <!-- ESCOLAR -->
+            <article class="contexto escolar">
+                <div class="icone-contexto">🏫</div>
+                <div>
+                    <h2>Escolar</h2>
+                    <p class="descricao">A óptica também é fundamental para o ensino e para a realização de experiências científicas.</p>
+                    <div class="aplicacoes">
+                        <div class="aplicacao">
+                            <div class="emoji">📽️</div>
+                            <h3>Projetores</h3>
+                            <p>Utilizam luz e lentes para formar, ampliar e projetar imagens em uma tela.</p>
+                        </div>
+                        <div class="aplicacao">
+                            <div class="emoji">🔬</div>
+                            <h3>Microscópios</h3>
+                            <p>Utilizam sistemas de lentes para ampliar imagens de objetos muito pequenos.</p>
+                        </div>
+                        <div class="aplicacao">
+                            <div class="emoji">🔭</div>
+                            <h3>Instrumentos ópticos</h3>
+                            <p>Telescópios e outros instrumentos utilizam lentes e espelhos para observar objetos que estão muito distantes.</p>
+                        </div>
+                    </div>
+                    <button class="botao-ouvir" onclick="lerSecao(this)">🔊 Ouvir escolar</button>
+                </div>
+            </article>
+
+            <!-- INDUSTRIAL -->
+            <article class="contexto industrial">
+                <div class="icone-contexto">🏭</div>
+                <div>
+                    <h2>Industrial</h2>
+                    <p class="descricao">Na indústria, a óptica pode aumentar a precisão, a automação e a segurança dos processos.</p>
+                    <div class="aplicacoes">
+                        <div class="aplicacao">
+                            <div class="emoji">🔴</div>
+                            <h3>Lasers</h3>
+                            <p>Podem ser utilizados em equipamentos de medição, marcação e processos industriais.</p>
+                        </div>
+                        <div class="aplicacao">
+                            <div class="emoji">🔍</div>
+                            <h3>Sensores ópticos</h3>
+                            <p>Utilizam luz para detectar objetos, movimentos ou mudanças em determinados processos.</p>
+                        </div>
+                        <div class="aplicacao">
+                            <div class="emoji">📷</div>
+                            <h3>Inspeção por câmeras</h3>
+                            <p>Câmeras podem registrar imagens de produtos para auxiliar na identificação de padrões e possíveis defeitos.</p>
+                        </div>
+                    </div>
+                    <button class="botao-ouvir" onclick="lerSecao(this)">🔊 Ouvir industrial</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- ================= FENÔMENOS ================= -->
+        <section class="secao" id="fenomenos">
+            <div class="titulo-central">
+                <span>💡</span>
+                <h2>Como a luz funciona?</h2>
+                <p>Dois fenômenos importantes para compreender diversas aplicações da óptica.</p>
+            </div>
+            <div class="fenomenos">
+                <div class="fenomeno">
+                    <div class="fenomeno-icon">↩️</div>
+                    <h3>Reflexão</h3>
+                    <div class="diagrama">
+                        <span>💡</span>
+                        <span class="seta">→</span>
+                        <span>🪞</span>
+                        <span class="seta">↗</span>
+                        <span>👁️</span>
+                    </div>
+                    <p>A reflexão acontece quando a luz atinge uma superfície e retorna ao meio de onde veio.</p>
+                    <strong>Exemplo:</strong> espelhos.
+                    <br><br>
+                    <button class="botao-ouvir" onclick="lerSecao(this)">🔊 Ouvir</button>
+                </div>
+                <div class="fenomeno">
+                    <div class="fenomeno-icon">💧</div>
+                    <h3>Refração</h3>
+                    <div class="diagrama">
+                        <span>💡</span>
+                        <span class="seta">→</span>
+                        <span>💧</span>
+                        <span class="seta">↘</span>
+                        <span>👁️</span>
+                    </div>
+                    <p>A refração acontece quando a luz passa de um meio para outro e sofre uma mudança em sua direção.</p>
+                    <strong>Exemplo:</strong> lentes dos óculos.
+                    <br><br>
+                    <button class="botao-ouvir" onclick="lerSecao(this)">🔊 Ouvir</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= IA ================= -->
+        <section class="secao ia">
+            <div class="titulo-secao">
+                <span>🤖</span>
+                <div>
+                    <h2>Inteligência Artificial e Óptica</h2>
+                    <p>Tecnologias trabalhando juntas</p>
+                </div>
+            </div>
+            <p>A inteligência artificial também pode trabalhar com tecnologias ópticas. Câmeras e sensores captam imagens e informações por meio da luz. Sistemas de IA podem analisar esses dados para reconhecer objetos, identificar padrões e auxiliar em diferentes tarefas.</p>
+            <button class="botao-ouvir" onclick="lerSecao(this)">🔊 Ouvir esta seção</button>
+        </section>
+
+        <!-- ================= QUIZ ================= -->
+        <section class="quiz secao" id="quiz">
+            <div class="titulo-central">
+                <span>🎮</span>
+                <h2>Teste seus conhecimentos!</h2>
+            </div>
+            <h3>Qual fenômeno acontece quando a luz muda de direção ao passar de um meio para outro?</h3>
+            <div class="opcoes">
+                <button onclick="responderQuiz(false)">🪞 Reflexão</button>
+                <button onclick="responderQuiz(true)">💧 Refração</button>
+                <button onclick="responderQuiz(false)">🌑 Absorção</button>
+            </div>
+            <p id="resultadoQuiz" class="resultado"></p>
+        </section>
+
+        <!-- ================= CONCLUSÃO ================= -->
+        <section class="conclusao">
+            <h2>🌎 Conclusão</h2>
+            <p>A óptica está presente em diferentes áreas da sociedade. Em nossas casas, escolas, estabelecimentos comerciais e indústrias, os fenômenos da luz são utilizados em diversas tecnologias.</p>
+            <p>Compreender a óptica permite entender melhor como funcionam equipamentos que fazem parte da nossa vida cotidiana e como novas tecnologias podem ser desenvolvidas.</p>
+            <button class="botao-ouvir" onclick="lerSecao(this)">🔊 Ouvir conclusão</button>
+        </section>
+
+        <!-- ================= FONTES ================= -->
+        <section class="secao fontes" id="fontes">
+            <h2>📚 Fontes de pesquisa</h2>
+            <ul>
+                <li>Livro didático de Física — conteúdos de Óptica.</li>
+                <li>Materiais disponibilizados pela Secretaria de Estado da Educação do Paraná.</li>
+                <li>Conteúdos educacionais sobre luz, reflexão, refração e instrumentos ópticos.</li>
+            </ul>
+        </section>
+    </main>
+
+  <!-- ================= RODAPÉ ================= -->
+<footer>
+    <h3>🔬 Óptica Aplicada</h3>
+    <p>Projeto Integrador — Inteligência Artificial e Tecnologias</p>
+    <p><strong>Autores:</strong> Gabriela G., Gabriel H., Heloísa, Hevelin, Jhenifer, Lindsay, Luana, Mariane e Murilo</p>
+    
+    <p>Ensino Médio</p>
+</footer>
+
+    <!-- ================= JAVASCRIPT INTEGRADO ================= -->
+    <script>
+        // LEITOR DE TEXTO
+        function lerSecao(botao) {
+            speechSynthesis.cancel();
+            const secao = botao.closest("section, article");
+            if (!secao) return;
+
+            let texto = secao.innerText;
+            texto = texto.replace(/🔊 Ouvir.*$/gm, "");
+
+            const fala = new SpeechSynthesisUtterance(texto);
+            fala.lang = "pt-BR";
+            fala.rate = 0.9;
+            fala.pitch = 1;
+            speechSynthesis.speak(fala);
+        }
+
+        function pararLeitura() {
+            speechSynthesis.cancel();
+        }
+
+        // CONTROLE DE FONTE
+        function aumentarFonte() {
+            document.body.classList.remove("fonte-pequena");
+            document.body.classList.add("fonte-grande");
+        }
+
+        function diminuirFonte() {
+            document.body.classList.remove("fonte-grande");
+            document.body.classList.add("fonte-pequena");
+        }
+
+        function tamanhoNormal() {
+            document.body.classList.remove("fonte-grande");
+            document.body.classList.remove("fonte-pequena");
+        }
+
+        // TEMAS
+        function altoContraste() {
+            document.body.classList.toggle("alto-contraste");
+            if (document.body.classList.contains("alto-contraste")) {
+                document.body.classList.remove("modo-escuro");
+            }
+        }
+
+        function modoEscuro() {
+            document.body.classList.toggle("modo-escuro");
+            if (document.body.classList.contains("modo-escuro")) {
+                document.body.classList.remove("alto-contraste");
+            }
+        }
+
+        // QUIZ
+        function responderQuiz(correta) {
+            const resultado = document.getElementById("resultadoQuiz");
+            resultado.classList.remove("correto", "incorreto");
+
+            if (correta) {
+                resultado.textContent = "🎉 Muito bem! A resposta correta é REFRAÇÃO.";
+                resultado.classList.add("correto");
+            } else {
+                resultado.textContent = "❌ Não foi dessa vez! Tente novamente.";
+                resultado.classList.add("incorreto");
+            }
+        }
+
+        // ATALHO TECLADO (ESC para parar leitura)
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                pararLeitura();
+            }
+        });
+    </script>
+</body>
+</html>
